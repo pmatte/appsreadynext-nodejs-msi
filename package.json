@@ -1,0 +1,18 @@
+{
+  "name": "appsreadynext-msi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "azureossd",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/identity": "^1.2.2",
+    "@azure/keyvault-secrets": "^4.1.0",
+    "azure-keyvault": "^3.0.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
