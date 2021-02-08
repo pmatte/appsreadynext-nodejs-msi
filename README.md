@@ -4,7 +4,7 @@
 
 ## Requirements
 
-1. Create an Azure Database for MySQL resource.
+1. Create an Azure Database for MySQL resource and disable Enforce SSL option.
 2. Create an Azure KeyVault resource.
 3. Create a secret for your KeyVault.
 4. Create a NodeJS Linux web app.
