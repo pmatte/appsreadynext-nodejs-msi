@@ -23,4 +23,4 @@
 
 ## Forbidden 403 error
 1. To fix this issue, go to your KeyVault under **Access policies** and add an **Access Policy**.
-2. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
+2. Select from template **Secret Management** and select just Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
