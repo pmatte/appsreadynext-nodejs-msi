@@ -12,12 +12,15 @@
 1. Create an Azure KeyVault resource.
 2. Create a secret for your KeyVault with your MySQL password.
 3. Go to Azure Web App under Identity and enable **System Assigned** and copy the Object ID value.
-4. Go to your KeyVault under **Access policies** and add an **Access Policy**.
-5. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
-6. Create/Update the following App Settings for your web app.
+4. Create/Update the following App Settings for your web app.
 
  -  **KEY_VAULT_URL**=your_keyvault_url
  -  **SECRET_NAME** = your_secret_name
  -  **HOST** = database_server
  -  **USER** = database_user
  -  **DATABASE** = database_name
+5. Request the site to reproduce a Forbidden 403 error.
+
+## Forbidden 403 error
+1. To fix this issue, go to your KeyVault under **Access policies** and add an **Access Policy**.
+2. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
