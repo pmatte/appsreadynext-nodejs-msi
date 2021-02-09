@@ -16,7 +16,7 @@
 		"hostingPlanName": "[replace(resourceGroup().name,'.','')]",
 		"siteName": "[concat(toLower(variables('hostingPlanName')), uniqueString(resourceGroup().id))]",
 		"sku": "S2",
-		"repoURL": "https://github.com/azureossd/appsreadynext-nodejs-msi-1.git",
+		"repoURL": "https://github.com/azureossd/appsreadynext-nodejs-msi.git",
 		"branch": "master",
 		"siteConfig": {
 			"linuxFxVersion": "NODE|12-lts"
