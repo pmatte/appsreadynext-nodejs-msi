@@ -10,7 +10,7 @@
 
 ## Requirements
 1. Create an Azure KeyVault resource.
-2. Create a secret for your KeyVault.
+2. Create a secret for your KeyVault with your MySQL password.
 3. Go to Azure Web App under Identity and enable **System Assigned** and copy the Object ID value.
 4. Go to your KeyVault under **Access policies** and add an **Access Policy**.
 5. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
