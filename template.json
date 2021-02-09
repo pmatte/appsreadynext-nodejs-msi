@@ -122,19 +122,6 @@
 					}
 				},
                 {
-                    "apiVersion": "2020-06-01",
-                    "name": "web",
-                    "type": "config",
-                    "dependsOn": [
-                            "[resourceId('Microsoft.Web/Sites', variables('siteName'))]"
-                        ],
-                    "properties":{
-                          "identity": {
-                            "type": "SystemAssigned"
-                        }
-                    }
-                },
-                {
                     "name": "appsettings",
                     "type": "config",
                     "apiVersion": "2020-06-01",

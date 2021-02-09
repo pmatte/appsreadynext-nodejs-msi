@@ -6,12 +6,12 @@
 
 - This template will create the following resources:
     - Azure Database for MySQL with Enforce SSL option disabled.
-    - Azure NodeJS Linux with MSI Identity **System Assigned**
+    - Azure NodeJS Linux.
 
 ## Requirements
 1. Create an Azure KeyVault resource.
 2. Create a secret for your KeyVault.
-3. Go to Azure Web App and select Identity **System Assigned** and copy the Object ID value.
+3. Go to Azure Web App under Identity and enable **System Assigned** and copy the Object ID value.
 4. Go to your KeyVault under **Access policies** and add an **Access Policy**.
 5. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
 6. Create/Update the following App Settings for your web app.
