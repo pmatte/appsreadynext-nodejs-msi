@@ -2,16 +2,19 @@
 
 >**The purpose of this repository is intended just for training material and it is not recommended to take this as a reference for production scenarios.**
 
-## Requirements
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazureossd%2Fappsreadynext-nodejs-easyauth-1%2Fmaster%2Ftemplate.json)
 
-1. Create an Azure Database for MySQL resource and disable Enforce SSL option.
-2. Create an Azure KeyVault resource.
-3. Create a secret for your KeyVault.
-4. Create a NodeJS Linux web app.
-5. Enable MSI with **System Assigned** and copy the Object ID value.
-6. Go to your KeyVault under Access policies and add an Access Policy.
-7. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
-8. Create the following App Settings for your web app.
+- This template will create the following resources:
+    - Azure Database for MySQL with Enforce SSL option disabled.
+    - Azure NodeJS Linux with MSI Identity **System Assigned**
+
+## Requirements
+1. Create an Azure KeyVault resource.
+2. Create a secret for your KeyVault.
+3. Go to Azure Web App and select Identity **System Assigned** and copy the Object ID value.
+4. Go to your KeyVault under **Access policies** and add an **Access Policy**.
+5. Select from template **Secret Management** and select just Key Permissions **Get** and Secret Permissions **Get** and then Select principal and copy the object id and add it. (Do not add Authorized Application, leave it as none selected) 
+6. Create/Update the following App Settings for your web app.
 
  -  **KEY_VAULT_URL**=your_keyvault_url
  -  **SECRET_NAME** = your_secret_name
